@@ -369,9 +369,9 @@
     // We modify the default font with a font descriptor instead
     // of using +monospacedDigitSystemFontOfSize:weight: because
     // we get slightly darker looking ':' characters this way.
-    NSFontDescriptor *fontDesc = [_statusItem.button.font fontDescriptor];
-    fontDesc = [fontDesc fontDescriptorByAddingAttributes:@{NSFontFeatureSettingsAttribute: @[@{NSFontFeatureTypeIdentifierKey: @(kNumberSpacingType), NSFontFeatureSelectorIdentifierKey: @(kMonospacedNumbersSelector)}]}];
-    _statusItem.button.font = [NSFont fontWithDescriptor:fontDesc size:0];
+//    NSFontDescriptor *fontDesc = [_statusItem.button.font fontDescriptor];
+//    fontDesc = [fontDesc fontDescriptorByAddingAttributes:@{NSFontFeatureSettingsAttribute: @[@{NSFontFeatureTypeIdentifierKey: @(kNumberSpacingType), NSFontFeatureSelectorIdentifierKey: @(kMonospacedNumbersSelector)}]}];
+//    _statusItem.button.font = [NSFont fontWithDescriptor:fontDesc size:0];
 
     // Remember item position in menubar. (@pskowronek (Github))
     [_statusItem setAutosaveName:@"ItsycalStatusItem"];
